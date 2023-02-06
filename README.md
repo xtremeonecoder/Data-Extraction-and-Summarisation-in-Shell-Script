@@ -20,7 +20,7 @@ The logfile consists of lines where each line represent one access request. It p
 
 
 ## How I solved:
-I developed separate function for each task as well as helper function. As I did not use the powerful built-in functions/commands – such as “awk” and so forth, so I had to write long and detailed functions for implementing the given tasks. I called appropriate tasks functions by matching command and arguments. I used “case” statement for controlling them.
+I developed separate function for each task as well as helper function. As I did not use the powerful built-in functions/commands – such as `awk` and so forth, so I had to write long and detailed functions for implementing the given tasks. I called appropriate tasks functions by matching command and arguments. I used `case` statement for controlling them.
 
 ## Major Commands Used:
-I mostly used cat, cut, sort, uniq, egrep, head and so forth commands for implementing the tasks functions. I avoided using “awk” commands.
+I mostly used `cat`, `cut`, `sort`, `uniq`, `egrep`, `head` and so forth commands for implementing the tasks functions. I avoided using `awk` commands.
