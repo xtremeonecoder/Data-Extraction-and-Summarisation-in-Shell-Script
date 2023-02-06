@@ -9,6 +9,13 @@ The log file is a web server log file from the small, portable and secure webser
 
 Task is to write a script that answers the following questions, the idea is that this script will be used by system admins to extract and summarise relevant information about the operation of the webserver so that they can check for anomalies, i.e. things that stand out from the ordinary, and investigate further if necessary. This is in fact a very simple and common form of intrusion detection.
 
+- Get maximum connection attempts
+- Get maximum successful attempts
+- Get the most common result codes
+- Get the most common failure codes
+- Get the IPs sent most bytes to them
+- Get the black listed IPs
+
 The logfile consists of lines where each line represent one access request. It pretty much follows the unified Apache combined log format. The fields, describe the following: IP number the request originated from; the ident answer from the originator (always ’-’); the username of the requester as determined by http authentication; date and time the request was processed; the request line as it was received from the client in double quotes; http status code that was sent to the client; number of bytes that was transferred to the client; referer page (from the client); user agent string (from the client). See e.g. the Apache documentation for more details (http://httpd.apache.org/docs/1.3/logs. html). Note that the fields are not well delimited (i.e. there is no reserved character to separate fields), this is unfortunately common when it comes to log files and a problem you have to contend with.
 
 
